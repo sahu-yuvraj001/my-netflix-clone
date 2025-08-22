@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import "tailwindcss";
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: 100% !important;
+  text-align: left !important; /* optional */
+  background-color: black;
+  
+}
+.netflix-font {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 2px; /* gives Netflix-style spacing */
+  
+}
+
