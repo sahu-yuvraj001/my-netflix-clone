@@ -7,7 +7,7 @@ export default defineConfig({
   content:["./index.html",
     "./src/**/*.{js,jsx,ts,tsx}",],
   plugins: [tailwindcss(), react()],
-  base: '/my-netflix-clone/', 
+  base: '/',
   css: {
     postcss: './postcss.config.js', // make sure you have tailwind configured
   },
