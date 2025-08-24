@@ -9,12 +9,12 @@ function Navbar() {
       style={{ backgroundImage: `url(${logo})` }}
     >
       <div>
-        <h1 className="left-40 top-5 font-bold text-5xl  text-red-700 absolute .netflix-font" >
+        <h1 className="left-40 top-5 font-bold text-5xl  text-red-700 absolute .netflix-font sm:left-10" >
           NETFLIX{" "}
         </h1>
       </div>
-      <div className="flex items-center text-white  absolute top-5  right-40 p-2">
-        <div className="flex items-center border px-4 py-1  border-sky-50 mr-4 p-1  rounded">
+      <div className="flex items-center text-white  absolute top-5  right-40 p-2 sm:right-10">
+        <div className="flex items-center justify-end border px-4 py-1  border-sky-50 mr-4 p-1  rounded">
           <Languages size={18} className="mr-2" />
           <select className="mr-2 focus:outline-none">
             <option className="bg-black text-white">English</option>
@@ -28,7 +28,10 @@ function Navbar() {
         </div>
       </div>
 
-      <div className="absolute  w-150 ml-115 h-100 top-65">
+      <div className="absolute   top-1/2 left-1/2 
+    -translate-x-1/2 -translate-y-1/2
+    w-[90%] sm:w-[80%] md:w-[70%] lg:w-[60%]
+    h-auto text-center">
         <div>
           <h1 className="text-5xl font-bold text-white">
             Unlimited movies, TV{" "}

@@ -8,7 +8,7 @@ function Faq() {
   const [isopen5, SetisOpen5] = useState(false);
   const [isopen6, SetisOpen6] = useState(false);
   return (
-    <div className="ml-40 w-300">
+    <div className="ml-40 pr-10">
       <h1 className="text-white text-2xl ml-0  max-w-md mx-auto mt-10">
         Frequently Asked Questions
       </h1>
@@ -18,8 +18,10 @@ function Faq() {
           onClick={() => SetisOpen(!isopen)}
         >
           {" "}
-          <span className="font-medium text-2xl">What is Netflix?</span>
-          <span className="text-white text-6xl">{isopen ? "-" : "+"}</span>
+          <span className="font-medium text-2xl md:text-[20px]">
+            What is Netflix?
+          </span>
+          <span className="text-white text-6xl md:text-5xl">{isopen ? "-" : "+"}</span>
         </button>
         {isopen && (
           <div className="px-4 pb-4 text-gray-300">
@@ -40,10 +42,10 @@ function Faq() {
           onClick={() => SetisOpen2(!isopen2)}
         >
           {" "}
-          <span className="font-medium text-2xl">
+          <span className="font-medium text-2xl md:text-[20px]">
             How much does Netflix cost?
           </span>
-          <span className="text-white text-6xl">{isopen2 ? "-" : "+"}</span>
+          <span className="text-white text-6xl md:text-5xl">{isopen2 ? "-" : "+"}</span>
         </button>
         {isopen2 && (
           <div className="px-4 pb-4 text-gray-300">
@@ -61,8 +63,10 @@ function Faq() {
           onClick={() => SetisOpen3(!isopen3)}
         >
           {" "}
-          <span className="font-medium text-2xl">Where can I watch?</span>
-          <span className="text-white text-6xl">{isopen3 ? "-" : "+"}</span>
+          <span className="font-medium text-2xl md:text-[20px]">
+            Where can I watch?
+          </span>
+          <span className="text-white text-6xl md:text-5xl">{isopen3 ? "-" : "+"}</span>
         </button>
         {isopen3 && (
           <div className="px-4 pb-4 text-gray-300">
@@ -85,8 +89,10 @@ function Faq() {
           onClick={() => SetisOpen4(!isopen4)}
         >
           {" "}
-          <span className="font-medium text-2xl">How do I cancel?</span>
-          <span className="text-white text-6xl">{isopen4 ? "-" : "+"}</span>
+          <span className="font-medium text-2xl md:text-[20px]">
+            How do I cancel?
+          </span>
+          <span className="text-white text-6xl md:text-5xl">{isopen4 ? "-" : "+"}</span>
         </button>
         {isopen4 && (
           <div className="px-4 pb-4 text-gray-300">
@@ -105,10 +111,10 @@ function Faq() {
           onClick={() => SetisOpen5(!isopen5)}
         >
           {" "}
-          <span className="font-medium text-2xl">
+          <span className="font-medium text-2xl md:text-[20px]">
             What can I watch on Netflix?
           </span>
-          <span className="text-white text-6xl">{isopen5 ? "-" : "+"}</span>
+          <span className="text-white text-6xl md:text-5xl">{isopen5 ? "-" : "+"}</span>
         </button>
         {isopen5 && (
           <div className="px-4 pb-4 text-gray-300">
@@ -127,8 +133,10 @@ function Faq() {
           onClick={() => SetisOpen6(!isopen6)}
         >
           {" "}
-          <span className="font-medium text-2xl">Is Netflix good for kids?</span>
-          <span className="text-white text-6xl">{isopen6 ? "-" : "+"}</span>
+          <span className="font-medium text-2xl md:text-[20px]">
+            Is Netflix good for kids?
+          </span>
+          <span className="text-white text-6xl md:text-5xl">{isopen6 ? "-" : "+"}</span>
         </button>
         {isopen6 && (
           <div className="px-4 pb-4 text-gray-300">
@@ -143,16 +151,18 @@ function Faq() {
           </div>
         )}
       </div>
-      <div className="mt-10 ml-80">
-        <p className="text-white mb-3">Ready to watch? Enter your email to create or restart your membership.</p>
-          <input
-            placeholder="Email Address"
-            className="text-white border border-white mr-5 h-14 w-90 rounded bg-transparent outline-0 pl-2 font-[10px]"
-          />
-          <button className="text-white bg-red-700 p-4 px-12 py-3.5  rounded  font-bold text-[20px]">
-            Get started
-          </button>
-        </div>
+      <div className="mt-10 ml-80 md:ml-30 sm:ml-2">
+        <p className="text-white mb-3">
+          Ready to watch? Enter your email to create or restart your membership.
+        </p>
+        <input
+          placeholder="Email Address"
+          className="text-white border border-white mr-5 h-14 w-90 sm:w-30 rounded bg-transparent outline-0 pl-2 font-[10px]"
+        />
+        <button className="text-white bg-red-700 p-4 px-12 py-3.5 md:mt-5 sm:px-3 sm:mt-10 rounded  font-bold text-[20px]">
+          Get started
+        </button>
+      </div>
     </div>
   );
 }

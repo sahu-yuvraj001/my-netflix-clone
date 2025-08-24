@@ -18,10 +18,11 @@ function Gallery() {
        <img
           src={src}
           key={index}
-          className="w-70 h-90 object-cover rounded-lg flex-shrink-0 hover:scale-110 transition duration-1000 hover:brightness-150 mr-10 ml-1"
+          className="w-70 h-90 object-cover rounded-lg flex-shrink-0 hover:scale-110 transition duration-1000 hover:brightness-150 mr-10 ml-1  sm:w-50 sm:h-70
+          md:w-43 md:h-60"
           alt={`poster-${index}`}
         />
-          <span className="text-8xl absolute bottom-2 left-2 text-white font-bold drop-shadow-lg opacity-80 ">{index+1}</span>
+          <span className="text-8xl sm:text-6xl md:text-7xl absolute bottom-2 left-2 text-white font-bold drop-shadow-lg opacity-80 ">{index+1}</span>
        </div>
       ))}
     
